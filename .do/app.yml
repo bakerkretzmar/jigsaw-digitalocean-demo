@@ -1,0 +1,12 @@
+name: jigsaw-digitalocean-demo
+region: nyc
+static_sites:
+- build_command: npm run production
+  environment_slug: php
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: bakerkretzmar/jigsaw-digitalocean-demo
+  name: jigsaw-digitalocean-demo
+  routes:
+  - path: /
