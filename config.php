@@ -9,6 +9,9 @@ return [
     'siteDescription' => 'Generate an elegant blog with Jigsaw',
     'siteAuthor' => 'Author Name',
 
+    // DigitalOcean recognizes _static, dist, or public
+    'build' => ['destination' => 'public'],
+
     // collections
     'collections' => [
         'posts' => [
